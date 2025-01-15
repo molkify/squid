@@ -1,0 +1,288 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b4befe;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.button {
+    background-color: #b4befe;
+    padding: 7px;
+    border: 1px solid white;
+    font-family: system-ui;
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    transition: all 350ms;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.img {
+    display: flex;
+    user-select: none;
+}
+
+header .img {
+    width: 30px;
+    height: 30px;
+    margin-left: 1vh;
+    align-self: center;
+}
+
+header > span {
+ flex-grow: 1;
+}
+
+.mewhencontainer {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.sidebar {
+    background-color: #b4befe;
+    color: white;
+    width: 501px;
+    box-sizing: border-box;
+    border-right: 1px solid white;
+}
+
+.sidebar h3 {
+    margin: 0;
+    padding-bottom: 1px;
+    margin-top: 5px;
+    padding-top: 10px;
+    font-size: 11px;
+    font-family: system-ui;
+    padding-left: 20px;
+    cursor: default;
+    font-weight: 100;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    width: calc(100% - 1px);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: system-ui;
+    height: 22px;
+    border: 1px solid transparent;
+    padding: 2px 20px;
+    font-size: 13px;
+    box-sizing: border-box; 
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.sidebar ul li a:focus {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #cc99e8;
+}
+
+.editor-container {
+    width: 100%;
+    background-color: #1e1e2e;
+    color: #FFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.editor-section {
+    flex-grow: 1;
+    display: flex;
+    border-right: 1px solid #1e2030;
+    flex-direction: column;
+}
+
+textarea {
+    flex-grow: 1;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: #1A1A1A;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.CodeMirror {
+    background-color: #1A1A1A !important;
+    font-family: "Fira Code", monospace !important;
+    font-weight: 100;
+    color: #FFF;
+}
+
+.CodeMirror,
+.CodeMirror pre,
+.CodeMirror-scroll {
+    color: white !important;
+}
+
+.cm-s-default .cm-header {
+    color: #ff9900; 
+}
+.cm-s-default .cm-comment {
+    color: #6a9955; 
+}
+.cm-s-default .cm-keyword {
+    color: #cc99cc; 
+}
+.cm-s-default .cm-string {
+    color: #d8d8d8;
+}
+.cm-s-default .cm-operator {
+    color: #ffcc66; 
+}
+.cm-s-default .cm-number {
+    color: #f99157; 
+}
+.cm-s-default .cm-variable {
+    color: #6699cc; 
+}
+
+button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+
+
+
+.editor-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.editor-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    flex-grow: 1;
+    font-family: system-ui;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#live-preview {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #b4befe;
+    border-left: 1px solid #313131;
+    color: #FFF;
+}
+
+#live-preview h3 {
+    margin: 0;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 9.4px;
+}
+
+
+
+iframe {
+    border: none;
+    width: 100%;
+    border-top: 1px solid #f2d5cf;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1; 
+}
+
+
+    .editor-section {
+        height: 100%;
+        background-color: #b4befe;
+    }
+
+    .CodeMirror cm-s-default {
+        height: 100vh;
+    }
+
+
+    .file {
+        border-bottom: 1px solid transparent;
+        font-size: 13px;
+        font-family: system-ui;
+        font-weight: 400;
+        padding: 0 3px 0 10px;
+        margin: 0;
+        height: 35px;
+        width: 80px;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+.tab {
+    border-bottom: 1px solid whitel;
+    background-color: #b4befe;
+    align-items: center;
+}
+
+
+    .html-code {
+        height: 100%;
+    }
